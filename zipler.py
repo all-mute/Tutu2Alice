@@ -8,6 +8,7 @@ def create_zip_archive(file_paths, zip_file_name):
 
 
 # Пример использования
-file_paths = ['ability_000.py', 'requirements.txt', 'index.py', 'reactions.py']
+file_paths = ['ability_000.py', 'requirements.txt', 'index.py', 'reactions.py',
+              'ability_yarasp.py']
 zip_file_name = 'Tutu2Alice.zip'
 create_zip_archive(file_paths, zip_file_name)

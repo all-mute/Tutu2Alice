@@ -79,10 +79,9 @@ def final_response_text(all_today_s_trips, timezone_str):
 
         response_text = ""
         for i in range(len(trips)):
-            # Второе ближайшее отправление: через 10 минут в 12:00 с прибытием 13:00, 60 минут в пути.
+            # "Второе ближайшее отправление: через 10 минут в 12:00. "
             line = prefix_templates[i] + ": через " + trips_timings[i][0] + \
-                   " минут в " + trips[i][0] + " с прибытием " + trips[i][1] + \
-                   ", " + trips_timings[i][1] + " минут в пути. "
+                   " минут в " + trips[i][0] + '. '
 
             response_text += line
 

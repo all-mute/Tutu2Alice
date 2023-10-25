@@ -35,7 +35,7 @@ def handler(event, context):
             'version': event['version'],
             'session': event['session'],
             'response': {
-                'text': e,
+                'text': "Извините, произошла ошибка. Перезапустите навык и попробуйте ещё раз.",
                 'end_session': 'true'
             },
         }
@@ -46,7 +46,7 @@ def handler(event, context):
             'version': event['version'],
             'session': event['session'],
             'response': {
-                'text': "idk",
+                'text': "Извините, произошла ошибка. Перезапустите навык и попробуйте ещё раз.",
                 'end_session': 'true'
             },
         }
